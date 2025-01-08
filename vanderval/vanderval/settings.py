@@ -23,11 +23,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = "9bf)g-hct6!eavgm)$xd3+-2gpdfs4$e=(z@ar%-r)t-6(@uv3"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
+DEBUG = True
 
 
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -81,13 +81,14 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'satyam_db',
-        'USER': 'postgres',
-        'PASSWORD': '7065746099',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'USER': 'avnadmin',
+        'PASSWORD': 'AVNS_SnU2lPeY6pfwfB82mfL',
+        'HOST': 'pg-3b5359eb-satyamrajarya-f23b.c.aivencloud.com',
+        'PORT': '20033',
         'OPTIONS': {
-            'options': '-c timezone=UTC',
+            'sslmode': 'require',
         },
+        
     }
 }
 
