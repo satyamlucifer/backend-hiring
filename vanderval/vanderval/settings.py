@@ -82,7 +82,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'satyam_db',
         'USER': 'avnadmin',
-        'PASSWORD': 'AVNS_SnU2lPeY6pfwfB82mfL',
+        'PASSWORD': os.getenv('DATABASE_PASSWORD', 'default_value'),
         'HOST': 'pg-3b5359eb-satyamrajarya-f23b.c.aivencloud.com',
         'PORT': '20033',
         'OPTIONS': {
